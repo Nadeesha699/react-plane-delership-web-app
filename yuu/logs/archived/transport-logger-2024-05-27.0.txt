@@ -1,0 +1,42 @@
+07:34:38.198 [main] INFO  com.finalproject.delership.DelershipApplication - Starting DelershipApplication v0.0.1-SNAPSHOT using Java 17.0.10 with PID 17280 (D:\yuu\delership.jar started by HP in D:\yuu)
+07:34:38.209 [main] INFO  com.finalproject.delership.DelershipApplication - The following 1 profile is active: "nadiya"
+07:34:39.814 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:34:39.949 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 129 ms. Found 5 JPA repository interfaces.
+07:34:40.802 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1000 (http)
+07:34:40.839 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+07:34:40.840 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+07:34:40.949 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/delership/api] - Initializing Spring embedded WebApplicationContext
+07:34:40.949 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2425 ms
+07:34:41.170 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 9.16.3 by Redgate
+07:34:41.171 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+07:34:41.172 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - 
+07:34:41.191 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07:34:41.647 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@712ca57b
+07:34:41.649 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07:34:41.692 [main] INFO  org.flywaydb.core.internal.database.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/delership (MySQL 5.5)
+07:34:45.942 [main] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:03.315s)
+07:34:45.958 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `delership`: 1.4
+07:34:45.962 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `delership` is up to date. No migration necessary.
+07:34:46.155 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07:34:46.327 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+07:34:46.335 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+07:34:46.624 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07:34:49.205 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+07:34:54.656 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07:34:54.656 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:34:58.536 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 1000 (http) with context path '/delership/api'
+07:34:58.670 [main] INFO  com.finalproject.delership.DelershipApplication - Started DelershipApplication in 25.432 seconds (process running for 26.227)
+08:46:50.320 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m7s172ms289µs800ns).
+10:50:31.454 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m5s572ms42µs600ns).
+11:42:57.900 [http-nio-1000-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/delership/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:42:57.905 [http-nio-1000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:42:57.938 [http-nio-1000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 33 ms
+11:42:58.979 [http-nio-1000-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.finalproject.delership.dto.request.employee.EmployeeCreateRequest` from Array value (token `JsonToken.START_ARRAY`)]
+11:44:41.522 [http-nio-1000-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.finalproject.delership.dto.request.employee.EmployeeCreateRequest` from Array value (token `JsonToken.START_ARRAY`)]
+13:52:01.044 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m25s540ms732µs700ns).
+14:13:03.101 [http-nio-1000-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.finalproject.delership.dto.request.employee.EmployeeCreateRequest` from Array value (token `JsonToken.START_ARRAY`)]
+14:16:28.324 [http-nio-1000-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.finalproject.delership.dto.request.employee.EmployeeCreateRequest` from Array value (token `JsonToken.START_ARRAY`)]
+14:17:08.351 [http-nio-1000-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.finalproject.delership.dto.request.employee.EmployeeCreateRequest` from Array value (token `JsonToken.START_ARRAY`)]
+14:19:26.520 [http-nio-1000-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.finalproject.delership.dto.request.employee.EmployeeCreateRequest` from Array value (token `JsonToken.START_ARRAY`)]
+14:20:03.119 [http-nio-1000-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.finalproject.delership.dto.request.employee.EmployeeCreateRequest` from Array value (token `JsonToken.START_ARRAY`)]
+14:21:31.814 [http-nio-1000-exec-9] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.finalproject.delership.enums.GenderType` from String "Male": not one of the values accepted for Enum class: [OTHER, FEMALE, MALE]]

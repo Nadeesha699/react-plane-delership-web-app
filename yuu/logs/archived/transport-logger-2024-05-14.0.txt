@@ -1,0 +1,28 @@
+14:34:14.427 [main] INFO  com.finalproject.delership.DelershipApplication - Starting DelershipApplication v0.0.1-SNAPSHOT using Java 17.0.10 with PID 5152 (D:\yuu\delership.jar started by HP in D:\yuu)
+14:34:14.578 [main] INFO  com.finalproject.delership.DelershipApplication - The following 1 profile is active: "nadiya"
+14:34:17.345 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:34:17.733 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 360 ms. Found 5 JPA repository interfaces.
+14:34:21.066 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1000 (http)
+14:34:21.178 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:34:21.184 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+14:34:21.867 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/delership/api] - Initializing Spring embedded WebApplicationContext
+14:34:21.871 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7027 ms
+14:34:22.740 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 9.16.3 by Redgate
+14:34:22.740 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+14:34:22.740 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - 
+14:34:22.796 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:34:23.988 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f86099a
+14:34:23.994 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:34:24.015 [main] INFO  org.flywaydb.core.internal.database.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/delership (MySQL 5.5)
+14:34:24.908 [main] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.518s)
+14:34:24.939 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `delership`: 1.4
+14:34:24.939 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `delership` is up to date. No migration necessary.
+14:34:25.554 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:34:25.872 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+14:34:25.888 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+14:34:27.505 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:34:27.738 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+14:34:31.053 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:34:31.060 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:34:33.938 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 1000 (http) with context path '/delership/api'
+14:34:34.059 [main] INFO  com.finalproject.delership.DelershipApplication - Started DelershipApplication in 23.362 seconds (process running for 27.137)

@@ -1,0 +1,31 @@
+11:34:57.459 [main] INFO  com.finalproject.delership.DelershipApplication - Starting DelershipApplication v0.0.1-SNAPSHOT using Java 17.0.10 with PID 15924 (D:\yuu\delership.jar started by HP in D:\yuu)
+11:34:57.580 [main] INFO  com.finalproject.delership.DelershipApplication - The following 1 profile is active: "nadiya"
+11:35:25.991 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:35:26.791 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 764 ms. Found 5 JPA repository interfaces.
+11:35:35.190 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1000 (http)
+11:35:35.414 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:35:35.415 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+11:35:35.940 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/delership/api] - Initializing Spring embedded WebApplicationContext
+11:35:35.940 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 36687 ms
+11:35:36.607 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 9.16.3 by Redgate
+11:35:36.609 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+11:35:36.612 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter - 
+11:35:36.631 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:35:38.018 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4564e94b
+11:35:38.022 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:35:38.033 [main] INFO  org.flywaydb.core.internal.database.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/delership (MySQL 5.5)
+11:35:39.166 [main] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.848s)
+11:35:39.181 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `delership`: 1.4
+11:35:39.182 [main] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `delership` is up to date. No migration necessary.
+11:35:40.927 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:35:43.433 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+11:35:43.439 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+11:35:47.514 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:35:47.968 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+11:35:52.454 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:35:52.458 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:35:59.615 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 1000 (http) with context path '/delership/api'
+11:35:59.946 [main] INFO  com.finalproject.delership.DelershipApplication - Started DelershipApplication in 84.127 seconds (process running for 85.092)
+11:38:35.518 [http-nio-1000-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/delership/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:38:35.518 [http-nio-1000-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:38:35.535 [http-nio-1000-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
