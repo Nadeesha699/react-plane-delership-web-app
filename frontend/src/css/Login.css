@@ -1,0 +1,375 @@
+.login-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 20%;
+  left: 33%;
+  gap: 40px;
+}
+
+.login-card label {
+  font-weight: bold;
+  letter-spacing: 7px;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(208, 255, 0);
+  font-family: cursive;
+}
+
+.login-card input {
+  border-radius: 5px;
+  padding: 4px;
+  width: 250px;
+  border-style: hidden;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  transition: all 1000ms ease-in-out;
+  /* box-shadow: 10px 10px 10px rgb(255, 0, 30); */
+}
+
+.login-card button {
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 213, 255, 0.234);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.login-card button:hover {
+  background-color: rgb(0, 213, 255);
+  color: black;
+  letter-spacing: 5px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.msg-login-c {
+  animation: msggroundChange 10s infinite alternate-reverse;
+  position: fixed;
+  left: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 17px;
+  border-radius: 10px;
+  justify-content: space-around;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  font-size: 15px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgb(0, 132, 255);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 2%;
+  transition: all 1000ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes msggroundChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.625);
+  }
+  50% {
+    background-color: rgba(0, 106, 255, 0.668);
+  }
+}
+
+.msg-login-c:hover {
+  letter-spacing: 5px;
+}
+
+.msg-login-c label {
+  cursor: pointer;
+  color: white;
+}
+
+.msg-login-c button {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+.msg-login-c button:hover {
+  background-color: white;
+  color: black;
+}
+
+.error-1 {
+  background-color: rgba(255, 0, 30, 0.46);
+  position: fixed;
+  top: 36%;
+  right: 44.6%;
+  padding: 0.3%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  transition: all 1000ms ease-in-out;
+  animation: msgErrorChange 10s infinite alternate-reverse;
+}
+
+.error-2 {
+  background-color: rgb(255, 0, 30, 0.46);
+  position: fixed;
+  top: 45%;
+  right: 44.6%;
+  padding: 0.3%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  transition: all 1000ms ease-in-out;
+  animation: msgErrorChange 10s infinite alternate-reverse;
+}
+
+@keyframes msgErrorChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.625);
+  }
+  50% {
+    background-color: rgb(255, 0, 30, 0.46);
+  }
+}
+
+.txt-new-account {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px red;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  transition: all 1000ms ease-in-out;
+  cursor: pointer;
+}
+
+.txt-new-account:hover {
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 0px red;
+}
+
+.main-employee-reg {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: left;
+  padding: 2%;
+  border-radius: 25px;
+  left: 30%;
+  transition: all 1500ms ease-in-out;
+  box-shadow: 10px 10px 10px rgba(0, 255, 106, 0.21);
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+.lbl-e-reg {
+  font-weight: bold;
+  letter-spacing: 7px;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px #00ff77;
+  font-family: cursive;
+}
+
+.main-employee-reg input {
+  border-radius: 5px;
+  padding: 4px;
+  width: 250px;
+  border-style: hidden;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.256);
+  transition: all 1000ms ease-in-out;
+}
+
+.main-employee-reg select {
+  border-radius: 5px;
+  padding: 4px;
+  width: 150px;
+  border-style: hidden;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.256);
+  transition: all 1000ms ease-in-out;
+}
+
+.btn-sub-reg-e {
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(255, 221, 0, 0.234);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.btn-sub-reg-e:hover {
+  background-color: rgb(255, 221, 0);
+  color: black;
+  letter-spacing: 5px;
+  box-shadow: 10px 10px 10px black;
+  width: 150px;
+}
+
+.btn-clear-reg-e {
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 255, 132, 0.234);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.btn-clear-reg-e:hover {
+  background-color: rgb(0, 255, 132);
+  color: black;
+  letter-spacing: 5px;
+  box-shadow: 10px 10px 10px black;
+  width: 150px;
+}
+
+.btn-ereg-close {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+  padding: 2px;
+}
+
+.btn-ereg-close:hover {
+  background-color: rgba(252, 0, 80, 0.797);
+  color: rgb(255, 255, 255);
+}
+
+.submain-employee-reg {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.submaintwo-employee-reg {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submainthree-employee-reg{
+  display: flex;
+  flex-direction: row;
+  gap: 9.5%;
+}
+
+.submainfour-employee-reg{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.e-validate-msg {
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: rgb(255, 0, 98);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0px 0px 14px rgb(0, 0, 0);
+  animation: evalChange 1s infinite alternate-reverse;
+}
+
+@keyframes evalChange {
+  0% {
+    color: rgb(242, 255, 0);
+  }
+  50% {
+    color: rgb(255, 0, 98);
+  }
+}
+
+.msg-ereg-c {
+  animation: msggroundChange 10s infinite alternate-reverse;
+  position: fixed;
+  left: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 17px;
+  border-radius: 10px;
+  justify-content: space-around;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  font-size: 15px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgb(0, 255, 157);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 2%;
+  transition: all 1000ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.msg-ereg-c:hover {
+  letter-spacing: 5px;
+}
+
+.msg-ereg-c label {
+  cursor: pointer;
+  color: white;
+}
+
+.msg-ereg-c button {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+.msg-ereg-c button:hover {
+  background-color: white;
+  color: black;
+}

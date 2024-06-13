@@ -1,0 +1,924 @@
+.main-home {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-panel {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  /* background-image: url(../image/back3.jpg);
+  background-position: center;
+  background-size: cover; */
+  /* background-color: aqua; */
+  height: 745px;
+}
+
+.space img {
+  height: 145px;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.space {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-space {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  margin-bottom: 40%;
+}
+
+.head-space img {
+  width: 50px;
+  height: 50px;
+  box-shadow: 10px 10px 10px black;
+  margin-right: 20px;
+}
+
+.head-space label {
+  font-weight: bold;
+  letter-spacing: 7px;
+  font-size: 37px;
+  color: rgb(255, 255, 255);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* text-shadow: 0px 0px 14px rgb(68, 0, 255); */
+  text-shadow: 0px 0px 16px rgb(25, 0, 255);
+}
+
+.main-base {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-items: stretch;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 1000ms ease-in-out;
+}
+
+.main-base img {
+  width: 100%;
+  /* height: 145.7px; */
+  height: 120.7px;
+}
+
+.main-add {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.main-add div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 80.5px;
+  height: 90px;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.main-add div:hover {
+  background-color: rgba(255, 255, 255, 0.221);
+}
+
+.main-add div img {
+  margin-left: 20%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.main-add div label {
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 12px rgb(255, 251, 0);
+  transition: all 2000ms ease-in-out;
+}
+
+.hide-sub-select {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.hide-sub-select .btn-back {
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  padding: 40%;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 2000ms ease-in-out;
+}
+
+.hide-sub-select .btn-back:hover {
+  background-color: rgba(255, 183, 0, 0.562);
+}
+
+.hide-sub-select .btn-front:hover {
+  background-color: rgba(0, 132, 255, 0.562);
+}
+
+.hide-sub-select .btn-front {
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  padding: 40%;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 2000ms ease-in-out;
+}
+
+.hide-sub-select label {
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 7px;
+  font-size: 10px;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
+  background-color: rgba(149, 0, 255, 0.311);
+  padding: 14%;
+  transition: all 2000ms ease-in-out;
+  animation: selectName 20s infinite alternate-reverse;
+}
+
+@keyframes selectName {
+  0% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 30px;
+  }
+  10% {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+  }
+  20% {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+  }
+  30% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 20px;
+  }
+  40% {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+  }
+  50% {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+  }
+  60% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 30px;
+  }
+  70% {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+  }
+  80% {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 30px;
+  }
+  90% {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+  }
+  100% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 30px;
+  }
+}
+
+.hide-select {
+  background-color: rgba(0, 0, 0, 0.455);
+  width: 21.1%;
+  position: fixed;
+  top: 0;
+  left: 16%;
+  height: 746px;
+  display: flex;
+  flex-direction: column;
+  transition: all 2000ms ease-in-out;
+  animation: SbackgroundChange 20s infinite alternate-reverse;
+}
+
+.hide-select .btn-close {
+  color: white;
+  font-weight: bolder;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 2000ms ease-in-out;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.hide-select .btn-close:hover {
+  background-color: rgba(255, 1, 90, 0.332);
+}
+
+@keyframes SbackgroundChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.455);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.749);
+  }
+}
+
+.hide-select h3 {
+  color: white;
+  letter-spacing: 7px;
+  text-align: center;
+  margin-bottom: 20%;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.hide-select p {
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 80%;
+  line-height: 14px;
+  transition: all 2000ms ease-in-out;
+  animation: pDance 50s infinite alternate-reverse;
+  cursor: pointer;
+  padding: 8%;
+}
+
+@keyframes pDance {
+  0% {
+    letter-spacing: 2.2px;
+    line-height: 14.2px;
+  }
+  10% {
+    letter-spacing: 2.4px;
+    line-height: 14.4px;
+  }
+  20% {
+    letter-spacing: 2.6px;
+    line-height: 14.6px;
+  }
+  30% {
+    letter-spacing: 2.8px;
+    line-height: 14.8px;
+  }
+  40% {
+    letter-spacing: 3px;
+    line-height: 15px;
+  }
+  50% {
+    letter-spacing: 3.2px;
+    line-height: 15.2px;
+  }
+  60% {
+    letter-spacing: 3.4px;
+    line-height: 15.4px;
+  }
+  70% {
+    letter-spacing: 3.6px;
+    line-height: 15.6px;
+  }
+  80% {
+    letter-spacing: 3.8px;
+    line-height: 15.8px;
+  }
+  90% {
+    letter-spacing: 4px;
+    line-height: 16px;
+  }
+  100% {
+    letter-spacing: 4.2px;
+    line-height: 16.2px;
+  }
+}
+
+.lbl-fav {
+  font-weight: bold;
+  letter-spacing: 7px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0px 0px 10px rgb(255, 0, 0);
+}
+
+.shop-card-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.shop-card-sub button {
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+.shop-card-sub button:hover {
+  background-color: rgba(4, 255, 201, 0.448);
+  letter-spacing: 10px;
+}
+
+.msg-register-c {
+  animation: msggroundChange 10s infinite alternate-reverse;
+  position: fixed;
+  left: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 17px;
+  border-radius: 10px;
+  justify-content: space-around;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  font-size: 15px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgb(255, 0, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 2%;
+  transition: all 1000ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.msg-register-c:hover {
+  letter-spacing: 5px;
+}
+
+@keyframes msggroundChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.625);
+  }
+  50% {
+    background-color: rgba(255, 0, 85, 0.668);
+  }
+}
+
+.msg-register-c label {
+  cursor: pointer;
+}
+
+.msg-register-c button {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+.msg-register-c button:hover {
+  background-color: white;
+  color: black;
+}
+
+.form-register-main {
+  position: fixed;
+  top: 10%;
+  border-radius: 20px;
+  width: 480px;
+  height: 490px;
+  transition: all 2000ms ease-in-out;
+  background-image: url(../image/icon/regImage1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 20px 20px 10px black;
+}
+
+.form-register-c {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  justify-items: left;
+  background-color: rgba(0, 0, 0, 0.621);
+  border-radius: 20px;
+  width: 450px;
+  height: 472px;
+  padding-left: 4%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+
+.c-form-topic {
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0px 0px 14px rgb(68, 0, 255);
+}
+
+.form-register-c input {
+  border-radius: 20px;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.547);
+  box-shadow: 10px 10px 10px black;
+  border-color: blue;
+  transition: all 2000ms ease-in-out;
+  border-width: 3px;
+  animation: inputChange 20s infinite alternate-reverse;
+  width: 200px;
+}
+
+.form-register-c input:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+@keyframes inputChange {
+  0% {
+    border-color: blue;
+  }
+  50% {
+    border-color: rgb(255, 0, 0);
+  }
+}
+
+.form-register-c select {
+  border-radius: 20px;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.547);
+  box-shadow: 10px 10px 10px black;
+  border-color: blue;
+  transition: all 2000ms ease-in-out;
+  border-width: 3px;
+  animation: inputChange 20s infinite alternate-reverse;
+  width: 100px;
+}
+
+.form-register-c select:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.form-register-c button {
+  color: white;
+  font-weight: bolder;
+  font-size: 11px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 1000ms ease-in-out;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btn-c-sub:hover {
+  background-color: rgba(255, 208, 0, 0.682);
+  letter-spacing: 4px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.btn-c-clear:hover {
+  background-color: rgba(0, 255, 132, 0.682);
+  letter-spacing: 4px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.btn-c-close:hover {
+  background-color: rgba(255, 0, 98, 0.682);
+}
+
+.form-register-c-sub {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+  width: 200px;
+}
+
+.msg-register-sub {
+  cursor: pointer;
+  animation: msgsubgroundChange 10s infinite alternate-reverse;
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 17px;
+  border-radius: 10px;
+  justify-content: space-around;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  font-size: 15px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgb(255, 174, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 2%;
+  transition: all 1000ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes msgsubgroundChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.625);
+  }
+  50% {
+    background-color: rgba(246, 255, 0, 0.668);
+  }
+}
+
+.msg-register-sub button {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+.msg-register-sub button:hover {
+  background-color: white;
+  color: black;
+}
+
+.c-validate-msg {
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: rgb(255, 0, 98);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0px 0px 14px rgb(0, 0, 0);
+  animation: cvalChange 1s infinite alternate-reverse;
+}
+
+@keyframes cvalChange {
+  0% {
+    color: rgb(242, 255, 0);
+  }
+  50% {
+    color: rgb(255, 0, 98);
+  }
+}
+
+.payment-form-main {
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  position: fixed;
+  /* left: 40%; */
+  top: 10%;
+  background-color: rgba(0, 0, 0, 0.522);
+  border-radius: 20px;
+  width: 820px;
+  height: 350px;
+  gap: 20px;
+  padding: 1%;
+  transition: all 2000ms ease-in-out;
+  animation: changePayBack 10s infinite alternate-reverse;
+  box-shadow: 10px 10px 10px black;
+}
+
+@keyframes changePayBack {
+  0%{
+    background-color: rgba(0, 0, 0, 0.522);
+  }
+  50%{
+    background-color: rgba(0, 0, 0, 0.714);
+  }
+  100%{
+    background-color: rgba(0, 0, 0, 0.825);
+  }
+  
+}
+
+.btn-p-close {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+  padding: 2px;
+}
+
+.btn-p-close:hover {
+  background-color: rgba(252, 0, 80, 0.797);
+  color: rgb(255, 255, 255);
+}
+
+.payment-form-main2 {
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  gap: 50px;
+}
+
+.lbl-pay-topic {
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0px 0px 14px rgb(68, 0, 255);
+}
+
+.payment-form-main3 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.payment-form-main4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment-form-main3 img{
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.payment-form-main5 {
+  display: flex;
+  flex-direction: row;
+}
+
+.lbl-pay-a {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(251, 255, 0);
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: cursive;
+  /* font-family: monospace; */
+}
+
+.lbl-pay-b {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0, 255, 102);
+  font-family: cursive;
+}
+
+.btn-pay {
+  color: white;
+  font-weight: bolder;
+  font-size: 11px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 1000ms ease-in-out;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    width: 100px;
+}
+
+.btn-pay:hover {
+  background-color: rgba(255, 208, 0, 0.682);
+  letter-spacing: 4px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.logout-form {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10%;
+  position: fixed;
+  top: 22%;
+  left: -2%;
+  background-color: rgba(0, 0, 0, 0.418);
+  padding: 0.4%;
+  width: 150px;
+  justify-content: right;
+  border-radius: 50px;
+  animation: logoutBackChange 5s infinite alternate-reverse;
+  transition: all 500ms ease-in-out;
+}
+
+.logout-form img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.logout-form label {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 12px rgb(255, 0, 0);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+}
+
+.logout-form label:hover {
+  letter-spacing: 4px;
+}
+
+@keyframes logoutBackChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.418);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.616);
+  }
+}
+
+
+.admin-form {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5%;
+  position: fixed;
+  top: 14%;
+  left: -2%;
+  background-color: rgba(0, 0, 0, 0.418);
+  padding: 0.4%;
+  width: 250px;
+  justify-content: right;
+  border-radius: 50px;
+  animation: logoutBackChange 5s infinite alternate-reverse;
+  transition: all 500ms ease-in-out;
+}
+
+.admin-form img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.admin-form label {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 12px rgb(255, 242, 0);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+}
+
+.admin-form label:hover {
+  letter-spacing: 4px;
+}
+
+@keyframes logoutBackChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.418);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.616);
+  }
+}
+
+.more-info-form-main {
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  position: fixed;
+  left: 40%;
+  /* top: 10%; */
+  background-color: rgba(0, 0, 0, 0.522);
+  border-radius: 20px;
+  width: 520px;
+  height: 550px;
+  gap: 20px;
+  padding: 1%;
+  transition: all 2000ms ease-in-out;
+  animation: changePayBack 10s infinite alternate-reverse;
+  box-shadow: 10px 10px 10px black;
+}
+
+.more-info-form-main img{
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.more-info-form-main label {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0, 153, 255);
+  font-family: cursive;
+}
+
+.more-info-form-main h3 {
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0px 0px 14px rgb(255, 196, 0);
+}
+
+.msg-paymet-com {
+  cursor: pointer;
+  animation: msgsubgroundChange 10s infinite alternate-reverse;
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 17px;
+  border-radius: 10px;
+  justify-content: space-around;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  font-size: 15px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgb(0, 187, 255);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 2%;
+  transition: all 1000ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes msgsubgroundChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.625);
+  }
+  50% {
+    background-color: rgba(0, 123, 255, 0.668);
+  }
+}
+
+.msg-paymet-com button {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+.msg-paymet-com button:hover {
+  background-color: white;
+  color: black;
+}
+

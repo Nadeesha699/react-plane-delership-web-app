@@ -1,0 +1,254 @@
+.admin-main {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.511);
+}
+
+.admin-board {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  justify-content: space-between;
+  height: 735px;
+  width: 200px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.436);
+}
+
+.admin-board h3 {
+  font-weight: bold;
+  letter-spacing: 7px;
+  font-size: 37px;
+  color: rgb(255, 255, 255);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0px 0px 16px rgb(25, 0, 255);
+}
+
+.admin-board label {
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 12px rgb(255, 251, 0);
+  transition: all 2000ms ease-in-out;
+}
+
+.div-1 {
+  padding-top: 10px;
+  transition: all 1000ms ease-in-out;
+}
+
+.div-1:hover {
+  background-color: rgba(255, 255, 255, 0.208);
+}
+
+.div-nodata {
+  position: fixed;
+  top: 20%;
+  right: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.div-nodata img {
+  width: 250px;
+  height: 250px;
+}
+
+.div-nodata label {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 12px rgb(255, 251, 0);
+  transition: all 2000ms ease-in-out;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f0f5ff9c;
+  border: 2px solid #3498db93;
+}
+
+th,
+td {
+  border: 1px solid #3498db93;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db93;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f5ff9c;
+}
+
+tr:hover {
+  background-color: #f0f5ff9c;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: 1px solid #3498db;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #3498db93;
+    color: #ffffff;
+  }
+}
+
+.views-admin-customers {
+  position: fixed;
+  right: 15%;
+}
+
+.views-admin-customers label {
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0px 0px 14px rgb(255, 196, 0);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.views-admin-orders {
+  position: fixed;
+  right: 36%;
+}
+
+.views-admin-orders label {
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0px 0px 14px rgb(255, 196, 0);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.add-admin-planes {
+  position: fixed;
+  right: 40%;
+}
+
+.add-sub-admin-planes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.div-add-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.add-sub-admin-planes input {
+  border-radius: 5px;
+  padding: 4px;
+  width: 250px;
+  border-style: hidden;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  transition: all 1000ms ease-in-out;
+}
+
+.add-admin-planes h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 12px rgb(255, 251, 0);
+  transition: all 2000ms ease-in-out;
+}
+
+.add-sub-admin-planes select {
+  border-radius: 5px;
+  padding: 4px;
+  width: 150px;
+  border-style: hidden;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  transition: all 1000ms ease-in-out;
+}
+
+.btn-plane-sub {
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 128, 255, 0.234);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.btn-plane-sub:hover {
+  background-color: rgb(0, 128, 255);
+  color: black;
+  letter-spacing: 5px;
+  box-shadow: 10px 10px 10px black;
+  width: 150px;
+}
+
+.btn-plane-clear {
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(255, 0, 64, 0.234);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.btn-plane-clear:hover {
+  background-color: rgb(255, 0, 64);
+  color: black;
+  letter-spacing: 5px;
+  box-shadow: 10px 10px 10px black;
+  width: 150px;
+}
+
+.p-validate-msg {
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: rgb(255, 0, 98);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-shadow: 0px 0px 14px rgb(0, 0, 0);
+    animation: evalChange 1s infinite alternate-reverse;
+  }
+  
+  @keyframes evalChange {
+    0% {
+      color: rgb(242, 255, 0);
+    }
+    50% {
+      color: rgb(255, 0, 98);
+    }
+  }
+

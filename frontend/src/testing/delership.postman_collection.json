@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "e63a6ae7-e3db-4b44-bff5-b5ced1f1ae4d",
+		"name": "delership",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25225142",
+		"_collection_link": "https://grey-water-571275.postman.co/workspace/plane-delership~110925a6-ebf9-4090-a929-f101e177f83c/collection/25225142-e63a6ae7-e3db-4b44-bff5-b5ced1f1ae4d?action=share&source=collection_link&creator=25225142"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Fraddy\",\r\n    \"lastName\": \"Appolo\",\r\n    \"contactNo\": \"1234567890\",\r\n    \"age\": 23,\r\n    \"genderType\": \"MALE\",\r\n    \"nic\": \"123456789V\",\r\n    \"nationality\": \"Srilankan\",\r\n    \"image\": \"https://example.com/profile.jpg\",\r\n    \"religion\": \"Buddishim\",\r\n    \"email\": \"johndoe@example.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{DELERSHIP_API}}/employees"
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{DELERSHIP_API}}/employees"
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{DELERSHIP_API}}/employees/1"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"fraddy\",\r\n    \"lastName\": \"Appolo\",\r\n    \"contactNo\": \"1234567890\",\r\n    \"age\": 30,\r\n    \"genderType\": \"MALE\",\r\n    \"nic\": \"123456789V\",\r\n    \"nationality\": \"American\",\r\n    \"image\": \"https://example.com/profile.jpg\",\r\n    \"religion\": \"Christian\",\r\n    \"email\": \"johndoe@example.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{DELERSHIP_API}}/employees/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{DELERSHIP_API}}/employees/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plane",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Boeing 747\",\r\n    \"sheet\": 400,\r\n    \"image\": \"https://example.com/plane_image.jpg\",\r\n    \"price\": \"$200,000,000\",\r\n    \"old\": 5,\r\n    \"weight\": 400000.0,\r\n    \"fuel\":\"AVGAS\",\r\n    \"speed\": \"SLOW\",\r\n    \"range\": \"MID\",\r\n    \"primary\": \"PERSONAL\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{DELERSHIP_API}}/planes"
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{DELERSHIP_API}}/planes"
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{DELERSHIP_API}}/planes/1"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Boeing 747\",\r\n    \"sheet\": 400,\r\n    \"image\": \"https://example.com/plane_image.jpg update\",\r\n    \"price\": \"$200,000,000\",\r\n    \"old\": 5,\r\n    \"weight\": 400000.0,\r\n    \"fuel\":\"AVGAS\",\r\n    \"speed\": \"SLOW\",\r\n    \"range\": \"MID\",\r\n    \"primary\": \"PERSONAL\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{DELERSHIP_API}}/planes/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{DELERSHIP_API}}/planes/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
